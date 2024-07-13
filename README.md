@@ -9,7 +9,6 @@ This lab replicates a business environment setup. The required tools include Mic
   + Window Server
   + Active Directory
   + Group Policy Management Console (GPMC)
-  + Client Machine
   + CMD
 ## Environments Used
   + VirtualBox
@@ -40,14 +39,14 @@ Within both User and Computer Configuration, there are different settings under 
 
 [![Screenshot-2024-07-13-115519.png](https://i.postimg.cc/s2jqdczB/Screenshot-2024-07-13-115519.png)](https://postimg.cc/18dJDDfP)
 
-# Types of Group policy settings
+# Types of Group Policy Settings
 
 The diagram provides a well-detailed explanation of the group policy types: 
 
 
 [![Untitled-Diagram-drawio-1.png](https://i.postimg.cc/SxJYT02j/Untitled-Diagram-drawio-1.png)](https://postimg.cc/Hr1LnhtC)
 
-# Applying and testing GPO
+# Applying and Testing GPO
 
 For this task, I'll be setting up three GPOs for hands-on activity, which will be applied to the 1000 bulk users created previously. These three GPOs will involve:
 
