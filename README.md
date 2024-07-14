@@ -1,4 +1,4 @@
-# On-Prem AD Setup
+# Group Policy Console Management (GPOs)
 ## Description
 This project outlines the essential setup steps for managing an on-premises Active Directory Group Policy Management (GPOs). The first part involves creating and setting up GPOs, and the second part focuses on implementing and testing those GPOs, continuing from the previous project. This project is designed to help you understand how these systems are set up, as someone in the company typically manages the Active Directory Group Policy. This involves setting account lock policy to prevent brute force attacks and other examples will be showned as well
 
