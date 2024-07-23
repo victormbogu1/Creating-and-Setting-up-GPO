@@ -88,7 +88,7 @@ Now the policy has been successfully implemented for all client users joined to 
 
 [![Screenshot-2024-07-13-165049.png](https://i.postimg.cc/zf4Vt5Vp/Screenshot-2024-07-13-165049.png)](https://postimg.cc/Jycr0f3B)
 
-Next, the policy to be integrated will restrict users access to the Control Panel to prevent them from making unauthorized changes. As mentioned earlier, the steps for configuring this policy are identical to those for setting up the wallpaper. Therefore, we'll navigate to the User Configuration to enforce restrictions on users via policy, as shown below
+Next, the policy needs to be integrated will restrict users access to the Control Panel to prevent them from making unauthorized changes. As mentioned earlier, the steps for configuring this policy are identical to those for setting up the wallpaper. Therefore, we'll navigate to the User Configuration to enforce restrictions on users via policy, as shown below
 
 [![Screenshot-2024-07-13-124935.png](https://i.postimg.cc/x86QZy6Y/Screenshot-2024-07-13-124935.png)](https://postimg.cc/jnnBwNVk)
 
@@ -116,4 +116,10 @@ For final verification to ensure all policies have been applied, I used the comm
 
 [![Screenshot-2024-07-13-151951.png](https://i.postimg.cc/B6G1Z44b/Screenshot-2024-07-13-151951.png)](https://postimg.cc/Z9VqVk9z)
 
+I also decided to review bad password attempts in my Active Directory to monitor user login behavior. For instance, one user account named "aabrev," which I created, showed 5 bad password attempts, exceeding the threshold policy set for users. When an AD user tries to authenticate with an incorrect password, the system logs the time in the `badPasswordTime` attribute and increments the `badPwdCount` attribute. You can view these values by accessing the Attribute Editor. While employees often enter passwords incorrectly, a high number of bad password attempts in a short period is concerning. This pattern could indicate a hacker attempting a brute force attack to guess passwords. Therefore, having a robust password policy and account lockout policy is crucial to mitigate such attacks. This is exactly what I implemented in the above task
 
+[![Screenshot-2024-07-23-100700.png](https://i.postimg.cc/K84hkrhW/Screenshot-2024-07-23-100700.png)](https://postimg.cc/ts0M86Td)
+
+I checked for bad password attempts using a PowerShell command to retrieve all users' last bad password attempts and bad password count values. In the photo, you can see that the user account "administrator" has only one bad password attempt, with the last attempt recorded on 7/4/2024 at 11:48 AM.
+
+[![Screenshot-2024-07-23-100546.png](https://i.postimg.cc/gktkT0Yf/Screenshot-2024-07-23-100546.png)](https://postimg.cc/0bms6PKf)
