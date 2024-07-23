@@ -1,10 +1,8 @@
 # Group Policy Console Management (GPOs)
 ## Description
-This project outlines the essential setup steps for managing an on-premises Active Directory Group Policy Management (GPOs). The first part involves creating and setting up GPOs, and the second part focuses on implementing and testing those GPOs, continuing from the previous project. This project is designed to help you understand how these systems are set up, as someone in the company typically manages the Active Directory Group Policy. This involves setting account lock policy to prevent brute force attacks and other examples will be showned as well
+This project outlines the essential setup steps for managing an on-premises Active Directory Group Policy Management (GPOs). The first part involves creating and setting up GPOs, and the second part focuses on implementing and testing those GPOs, continuing from the previous project. This project is designed to help you understand how these systems are set up, as someone in the company typically manages the Active Directory Group Policy. This involves setting account lock policy to prevent brute force attacks and other examples will be showned as well.
 
-Building on the previous project, this will involve the 1000+ users created with Azure Active Directory. It includes setting up a Microsoft Server to run Active Directory and configuring a Domain Controller to manage a domain. Note that this lab won't show the installation of GPO since it is automatically included when installing AD.
-
-This lab replicates a business environment setup. The required tools include Microsoft Server 2019 ISO, Windows 10 Enterprise ISO, and VirtualBox. Note that the installation of VirtualBox and the client machine won't be displayed here, but I will provide the download links below as usual
+Building on the previous project, this will involve the 1000+ users created with Azure Active Directory. It includes setting up a Microsoft Server to run Active Directory and configuring a Domain Controller to manage a domain. Note that this lab won't show the installation of GPO since it is automatically included when installing AD. This lab replicates a business environment setup. The required tools include Microsoft Server 2019 ISO, Windows 10 Enterprise ISO, and VirtualBox. Note that the installation of VirtualBox and the client machine won't be displayed here, but I will provide the download links below as usual
 ## Languages and Utilities Used
   + Window Server
   + Active Directory
