@@ -123,3 +123,8 @@ I also decided to review bad password attempts in my Active Directory to monitor
 I checked for bad password attempts using a PowerShell command to retrieve all users' last bad password attempts and bad password count values. In the photo, you can see that the user account "administrator" has only one bad password attempt, with the last attempt recorded on 7/4/2024 at 11:48 AM.
 
 [![Screenshot-2024-07-23-100546.png](https://i.postimg.cc/gktkT0Yf/Screenshot-2024-07-23-100546.png)](https://postimg.cc/0bms6PKf)
+
+I also reviewed failed password attempts in Active Directory for the past 15 days using PowerShell commands. This analysis revealed that four users had attempted to log in unsuccessfully during this period. Specifically, one user had five failed login attempts, while one user had just one. This information is crucial for identifying potential security issues, such as brute force attacks
+
+[![Screenshot-2024-07-23-115958.png](https://i.postimg.cc/Ss8fZKw4/Screenshot-2024-07-23-115958.png)](https://postimg.cc/YGrF0trD)
+
